@@ -1,0 +1,17 @@
+# Pulumi project file
+# https://www.pulumi.com/docs/intro/concepts/project/
+
+name: django-serverless
+runtime: python
+description: A Django website packaged using the Serverless Framework and deployed
+  via Pulumi.
+# Where __main__.py is located
+main: ./pulumi
+# Where stack configs are located
+config: ./pulumi/stacks
+# Default config for stacks
+template:
+  config:
+    aws:region:
+      description: The AWS region to deploy into
+      default: eu-west-1

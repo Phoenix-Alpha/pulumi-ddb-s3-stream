@@ -1,0 +1,10 @@
+# Pululi
+pulumi==1.8.1
+pulumi_aws==1.17.0
+
+# Code quality
+pylint==2.4.4
+autopep8==1.4.4
+
+--requirement lambda.txt
+--requirement dynamic_providers.txt
